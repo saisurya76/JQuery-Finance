@@ -21,5 +21,18 @@ JQuery-Finance\jqInvestor
   a. ROE
   b. ROI
   c. FinancialHealthIndicators
+    1. totalExpenditure
+    2.  netIncome
+    3.  netIncomeApplicableToCommon
+    4.  roi
+    5.  roe
+    6.  deficit
+    7.  surplus
+    8.  debtRatio
+    9.  grossProfit
+    10.  grossProfitMargin
+    11.  grossMargin
+    12.  operatingIncome
+    13.  retainedEarnings
   d. FreeCashFlow
   

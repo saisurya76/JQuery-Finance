@@ -7,7 +7,7 @@ JQuery Plugins for Finance domain
 JQuery-Finance\jqInvestor
 
 
-1. "jqInvestor" is a set of JQuery plugins to assist the developers automate simple to advanced fincncial calculations.
+1. "jqInvestor" is a set of JQuery plugins to assist the developers automate simple to advanced financial calculations.
 
 2. sample-calc features include
   a. simple interest

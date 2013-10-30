@@ -1,0 +1,41 @@
+SIMPLE CALC
+-----------
+
+var dataSimpleEx1 = $(".SimpleEx1Element").SimpleInterest(100, 2, 10);
+$(".resultSimpleEx1").text("interest : " + dataSimpleEx1.data["interest"] + ", " + "amount : " + dataSimpleEx1.data["amount"]);
+
+var dataSimpleEx2 = $(".SimpleEx2Element").CompoundInterest(100, 2, 10, 4);
+$(".resultSimpleEx2").text("interest : " + dataSimpleEx2.data["interest"] + ", " + "amount : " + dataSimpleEx2.data["amount"]);
+
+var dataSimpleEx3 = $(".SimpleEx3Element").RecurringDepositMaturity(10000, 10, 10);
+$(".resultSimpleEx3").text("interest : " + dataSimpleEx3.data["interest"] + ", " + "amount : " + dataSimpleEx3.data["amount"]);
+
+var dataSimpleEx4 = $(".SimpleEx4Element").CreditCardBalance(10000, 0 , 10, 10);
+$(".resultSimpleEx4").text("balance after 10th month : " + dataSimpleEx4.data["balance"]);
+
+var dataSimpleEx5 = $(".SimpleEx5Element").MortgageBalance(10000, 200, 1000, 10);
+$(".resultSimpleEx5").text("Current balance : " + dataSimpleEx5.data["balance"]);
+
+var dataSimpleEx6 = $(".SimpleEx6Element").LoanEMI(2300000, 10.1, 20);
+$(".resultSimpleEx6").text("EMI : " + dataSimpleEx6.data["emi"]);
+
+
+
+ADVANCED CALC
+-------------
+
+var dataAdvancedEx1 = $(".AdvancedEx1Element").ROE(18000, 45000);
+$(".resultAdvancedEx1").text("ROE : " + dataAdvancedEx1.data["roe"] + " or " + (dataAdvancedEx1.data["roe"]* 100) + "%");
+
+var dataAdvancedEx2 = $(".AdvancedEx2Element").ROI(18000, 100000);
+$(".resultAdvancedEx2").text("ROI : " + dataAdvancedEx2.data["roi"] + " or " + (dataAdvancedEx2.data["roi"] * 100) + "%");
+
+//totalRevenue, totalAssets, costOfGoodsSold, operatingExpenditure, avgStockholderEquity, interestExpense, taxes, preferredStockDividend, totalLiabilities, sales, dividend
+var dataAdvancedEx3 = $(".AdvancedEx3Element").FinancialHealthIndicators(100000,150000,20000,10000,45000,10000,2000,10000,10000,60000,10000);
+$(".resultAdvancedEx3").text("  Total Expenditure : " + dataAdvancedEx3.data["totalExpenditure"] + ",  Net Income : " + dataAdvancedEx3.data["netIncome"] + ",  Net Income Applicable To Common : " + dataAdvancedEx3.data["netIncomeApplicableToCommon"] + ",  ROI : " + dataAdvancedEx3.data["roi"] + " or " + (dataAdvancedEx3.data["roi"] * 100) + "% " + ",  ROE : " + dataAdvancedEx3.data["roe"] + " or " + (dataAdvancedEx3.data["roe"] * 100) + "% " + ",  Deficit : " + dataAdvancedEx3.data["deficit"] + ",  Surplus : " + dataAdvancedEx3.data["surplus"] + ",  Debt Ratio : " + dataAdvancedEx3.data["debtRatio"] + ",  Gross Profit : " + dataAdvancedEx3.data["grossProfit"] + ",  Gross Profit Margin : " + dataAdvancedEx3.data["grossProfitMargin"] + ",  Gross Margin : " + dataAdvancedEx3.data["grossMargin"] + ",  Operating Income: " + dataAdvancedEx3.data["operatingIncome"] + ",  Retained Earnings: " + dataAdvancedEx3.data["retainedEarnings"]);
+
+//netIncome, depreciation, amortization, CapitalExpenditure, changeInNetWorkingCapital
+var dataAdvancedEx4 = $(".AdvancedEx4Element").FreeCashFlow(1000000, 5000, 2000, 10000, -10000);
+$(".resultAdvancedEx4").text("  Free Cash Flow (FCF): " + dataAdvancedEx4.data["freeCashFlow"]);
+
+

@@ -36,3 +36,11 @@ JQuery-Finance\jqInvestor
     13.  retainedEarnings
   d. FreeCashFlow
   
+
+                                               ---- +++ ----
+                                               
+                                               
+    jquery_widgets
+    -------------
+    
+    These are the programs to process bulk\large data like arrays using the respective plugins internally.

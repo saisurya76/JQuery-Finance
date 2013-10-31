@@ -1,0 +1,48 @@
+<div class="SimpleEx1Element"> </div>
+<table>
+<tr style="font-size:small">
+    <td style="vertical-align:top;text-align:left"> 
+        <div id="siInTBL1"></div>
+    </td>
+    <td style="vertical-align:top;text-align:left"> 
+        <div id="siOutTBL1"></div>
+    </td>
+</tr>
+</table>
+
+
+
+
+<script type="text/javascript">
+//USING BULK DATA (ARRAY) TO CALCULATE SIMPLE INTEREST
+
+    var inArray = [[100, 2, 10], [1, 2, 7.0], [2, 2, 15.7], [3, 2, 0.5], [4, 2, -10.4], [75, 2, 1.1], [6, 2, 13.2]];
+    $('#siInTBL1').html(GetInputHTMLTable_SI("siInTBL1", inArray));
+    var outArr = $(".SimpleEx1Element").GetSimpleInterestData(".SimpleEx1Element", inArray);
+    $('#siOutTBL1').html(GetOutputHTMLTable_SI("siOutTBL1", outArr.data["dataSetSI"]));
+</script>    
+
+
+                                             ---- ++++ ----
+
+Simillarly.....
+
+//COMPOUIND INTEREST
+<script type="text/javascript">
+
+    var inArray = [[100, 5, 10, 4], [1, 74, 7.0, 4], [2, 2, 15.7, 4], [3, 2, 0.5, 4], [4, 2, -10.4, 4], [75, 2, 1.1, 4], [6, 2, 13.2, 4]];
+    $('#ciInTBL1').html(GetInputHTMLTable_CI("ciInTBL1", inArray));
+    var outArr = $(".SimpleEx2Element").GetCompoundInterestData(".SimpleEx2Element", inArray);
+    $('#ciOutTBL1').html(GetOutputHTMLTable_CI("ciOutTBL1", outArr.data["dataSetCI"]));
+</script>
+ 
+ 
+//RECURRING DEPOSIT
+<script type="text/javascript">
+
+    var inArray = [[100, 5, 10], [1, 74, 7.0], [2, 2, 15.7], [3, 2, 0.5]];
+    $('#rdInTBL1').html(GetInputHTMLTable_RD("rdInTBL1", inArray));
+    var outArr = $(".SimpleEx3Element").GetRecurringDepositMaturityData(".SimpleEx3Element", inArray);
+    $('#rdOutTBL1').html(GetOutputHTMLTable_RD("rdOutTBL1", outArr.data["dataSetRD"]));
+</script>
+
